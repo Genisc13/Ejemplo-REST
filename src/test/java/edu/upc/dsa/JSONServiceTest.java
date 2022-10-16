@@ -9,17 +9,17 @@ import static org.junit.Assert.*;
  */
 public class JSONServiceTest {
     @Test
-    public void getTrack() throws Exception {
+    public void getMap() throws Exception {
 
     }
 
     @Test
-    public void getTrackInJSON() throws Exception {
+    public void getMapInJSON() throws Exception {
 
     }
 
     @Test
-    public void createTrackInJSON() throws Exception {
+    public void createMapInJSON() throws Exception {
 
     }
 
