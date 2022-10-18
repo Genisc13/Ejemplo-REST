@@ -7,16 +7,18 @@ public class Map {
     String id;
     String name;
     String type;
+    String size;
     static int lastId;
 
     public Map() {
         this.id = RandomUtils.getId();
     }
 
-    public Map(String name, String type) {
+    public Map(String name, String type,String size) {
         this();
         this.setType(type);
         this.setName(name);
+        this.setSize(size);
     }
 
     public String getId() {
@@ -43,10 +45,17 @@ public class Map {
     public void setType(String type) {
         this.type = type;
     }
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
 
     @Override
     public String toString() {
-        return "Map [id="+id+", name=" + name + ", type=" + type +"]";
+        return "Map [id="+id+", name=" + name + ", type=" + type +", size="+size+"]";
     }
 
 }

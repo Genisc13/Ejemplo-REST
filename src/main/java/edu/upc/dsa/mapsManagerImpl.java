@@ -31,20 +31,20 @@ public class mapsManagerImpl implements mapsManager {
         logger.info("new Track " + t);
 
         this.maps.add (t);
-        logger.info("new Track added");
+        logger.info("new Map added");
         return t;
     }
 
-    public Map addMap(String name, String type) {
-        return this.addMap(new Map(name, type));
+    public Map addMap(String name, String type, String size) {
+        return this.addMap(new Map(name, type, size));
     }
 
     public Map getMap(String id) {
-        logger.info("getTrack("+id+")");
+        logger.info("getMap("+id+")");
 
         for (Map t: this.maps) {
             if (t.getId().equals(id)) {
-                logger.info("getTrack("+id+"): "+t);
+                logger.info("getMap("+id+"): "+t);
 
                 return t;
             }
@@ -80,6 +80,7 @@ public class mapsManagerImpl implements mapsManager {
 
             t.setType(p.getType());
             t.setName(p.getName());
+            t.setSize(p.getSize());
 
             logger.info(t+" updated ");
         }
