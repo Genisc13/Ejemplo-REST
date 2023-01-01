@@ -35,8 +35,8 @@ public class mapsManagerImpl implements mapsManager {
         return t;
     }
 
-    public Map addMap(String name, String type, String size) {
-        return this.addMap(new Map(name, type, size));
+    public Map addMap(String id ,String name, String type, String size) {
+        return this.addMap(new Map(id, name, type, size));
     }
 
     public Map getMap(String id) {

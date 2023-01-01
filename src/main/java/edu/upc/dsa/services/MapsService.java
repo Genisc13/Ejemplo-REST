@@ -24,9 +24,9 @@ public class MapsService {
     public MapsService() {
         this.mm = mapsManagerImpl.getInstance();
         if (mm.size()==0) {
-            this.mm.addMap("Mordor","Vacío","Grande");
-            this.mm.addMap("Cueva de lava", "Fuego","Pequeño");
-            this.mm.addMap("Lucha en el cielo", "Aereo","Medio");
+            this.mm.addMap("1","Mordor","Vacío","Grande");
+            this.mm.addMap("2","Cueva de lava", "Fuego","Pequeño");
+            this.mm.addMap("3","Lucha en el cielo", "Aereo","Medio");
         }
 
 

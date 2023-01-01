@@ -1,6 +1,5 @@
 package edu.upc.dsa.models;
 
-import edu.upc.dsa.util.RandomUtils;
 
 public class Map {
 
@@ -8,14 +7,13 @@ public class Map {
     String name;
     String type;
     String size;
-    static int lastId;
 
     public Map() {
-        this.id = RandomUtils.getId();
     }
 
-    public Map(String name, String type,String size) {
+    public Map(String id,String name, String type,String size) {
         this();
+        this.setId(id);
         this.setType(type);
         this.setName(name);
         this.setSize(size);

@@ -7,7 +7,7 @@ import java.util.List;
 public interface mapsManager {
 
 
-    public Map addMap(String name, String type, String size);
+    public Map addMap(String id, String name, String type, String size);
     public Map addMap(Map t);
     public Map getMap(String id);
     public List<Map> findAll();
